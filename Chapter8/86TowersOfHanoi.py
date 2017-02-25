@@ -69,7 +69,7 @@ def printTower(newstack):
         # print "".join("-" for i in range(newstack.Pop(1)))
     while not newstack.IsEmpty(2):
         # print newstack.Pop(2)
-        print "".join("-" for i in range(newstack.Pop(2)))
+        print("".join("-" for i in range(newstack.Pop(2))))
 
 
 def FillTower(N):
@@ -77,6 +77,7 @@ def FillTower(N):
     for i in range(N, 0, -1):
         newstack.Push(i, 0)
     return newstack
+
 
 N = 3
 newstack = FillTower(N)
